@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="exposicion_2026" version="0.1.3">
+ <settings>
+  <title>Exposición 2026</title>
+  <revision description="created" date="9/30/26" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Exposición 2026" />
+  <item name="Info granja 02 Armamos" />
+  <item name="Ident oveja" />
+  <item name="Ident cerdo" />
+  <item name="Ident caballo" />
+  <item name="Ident vaca" />
+  <item name="Trabajamos con abeja" />
+  <item name="Identifica Abeja" />
+  <item name="Donde viven abejas" />
+  <item name="Nos da miel" />
+  <item name="Antenas" />
+  <item name="Arma el puzle" />
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Exposición 2026" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="Exposición sobre la Granja 2026.MP3" />
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x990099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x990099" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Expo1 2026.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Info granja 02 Armamos" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="zzzz granja 02 armamos.MP3" />
+     <p>¡ARMAMOS ESTA GRANJA!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xCC0099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC0099" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Granja 2026-resized1.jpg">
+    <style>
+     <color background="0x66FF00" inactive="0x66FF00" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Trabajamos con abeja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="Trabajamos con la Abeja.MP3" />
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x990099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x990099" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="Abeja 2026-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@panels.Identify" name="Identifica Abeja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="Señala a las Abejas.MP3" />
+     <p>SEÑALA A LAS ABEJAS.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="004Estupendo.MP3" />
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x990099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x990099" border="true" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="292.0" cellHeight="267.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1" image="160 Abejas.png" />
+    <cell id="0" image="161 Vaca.png" />
+    <cell id="0" image="162 Caballo.png" />
+    <cell id="0" image="163 Oveja.png" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="Donde viven abejas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="167 Dónde viven las abejas.MP3" />
+     <p>¿DÓNDE VIVEN LAS ABEJAS?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="168 En la colmena.MP3" />
+     <p>EN LA COLMENA</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x990099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x990099" border="true" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="257.0" cellHeight="226.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell id="1" image="169 Colmena.-resized.jpg" />
+    <cell id="0" image="170 Conejera-resized.jpg" />
+    <cell id="0" image="171 Gallinero-resized.jpg" />
+    <cell id="0" image="172 Establo-resized.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="Antenas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="063_260303_1639V0.MP3" />
+     <p>SEÑALA LAS ANTENAS DE LA ABEJA</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="005 Bien, bien, muy bien (2).MP3" />
+     <p>¡MUY BIEN!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="3" border="false" image="173 Abeja Mabel-resized.jpg" id="primary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">M:0.368417,0.158333|L:0.318417,0.128333|L:0.27175,0.128333|L:0.210083,0.163333|L:0.225083,0.203333|L:0.185083,0.251667|L:0.13675,0.233333|L:0.108417,0.181667|L:0.13175,0.131667|L:0.275083,0.06|L:0.36675,0.075|L:0.398417,0.103333|L:0.508417,0.098333|L:0.59175,0.02|L:0.730083,0.001667|L:0.785083,0.043333|L:0.77675,0.113333|L:0.715083,0.13|L:0.66675,0.075|L:0.530083,0.128333|L:0.50675,0.113333|L:0.508417,0.098333|L:0.40175,0.108333|L:0.370083,0.161667|L:0.37175,0.163333|L:0.368417,0.158333</shape>
+    </shaper>
+    <ids>1</ids>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="Arma el puzle" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="11 Arma el puzzle.MP3" />
+     <p>ARMA EL PUZLE</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="0008 Fantástico.mp3" />
+     <p>¡FANTÁSTICO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0x990099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x990099" border="true" />
+   </settings>
+   <cells rows="2" cols="1" border="true" image="173 Abeja Mabel-resized.jpg">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="1" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Identify" name="Ident caballo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="zzzz granja 05 caballo con flia.MP3" />
+     <p>SEÑALA DONDE ESTÁ EL CABALLO CON SU FAMILIA.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="075 Correcto.MP3" />
+     <p>¡CORRECTO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCC0099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC0099" border="true" />
+   </settings>
+   <cells rows="2" cols="3" border="false" image="zzzz aa la granja-resized.jpg" id="primary">
+    <style>
+     <color background="0x99FF66" inactive="0x99FF66" />
+    </style>
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">M:0.2325,0.564738|L:0.2,0.650138|L:0.2075,0.677686|L:0.22,0.735537|L:0.2475,0.785124|L:0.23625,0.774105|L:0.285,0.763085|L:0.29625,0.713499|L:0.335,0.743802|L:0.4125,0.730028|L:0.42125,0.608815|L:0.39625,0.520661|L:0.36375,0.512397|L:0.3375,0.581267|L:0.30375,0.603306|L:0.265,0.556474|L:0.23125,0.561983</shape>
+    </shaper>
+    <ids>1</ids>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="Ident cerdo" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="zzzz granja 04 flia de cerdos.MP3" />
+     <p>SEÑALA DONDE ESTÁ LA FAMILIA DE CERDOS.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="079  Bien.MP3" />
+     <p>¡BIEN!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCC0099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC0099" border="true" />
+   </settings>
+   <cells rows="2" cols="3" border="false" image="zzzz aa la granja-resized.jpg" id="primary">
+    <style>
+     <color background="0x99FF66" inactive="0x99FF66" />
+    </style>
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">M:0.46,0.614325|L:0.44875,0.68595|L:0.47,0.727273|L:0.52375,0.694215|L:0.5725,0.710744|L:0.595,0.663912|L:0.58125,0.600551|L:0.55125,0.61708|L:0.54,0.647383|L:0.53125,0.61708|L:0.51,0.619835|L:0.505,0.658402|L:0.48125,0.61708|L:0.46625,0.61708|L:0.46,0.608815|L:0.46,0.614325</shape>
+    </shaper>
+    <ids>1</ids>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="Ident oveja" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="zzzz granja 03 oveja con flia.MP3" />
+     <p>SEÑALA DONDE ESTÁ LA OVEJA CON SU FAMILIA.</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="075 Correcto.MP3" />
+     <p>¡CORRECTO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCC0099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC0099" border="true" />
+   </settings>
+   <cells rows="2" cols="3" border="false" image="zzzz aa la granja-resized.jpg" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0x99FF66" inactive="0x99FF66" />
+    </style>
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">M:0,0.892562|L:0.045,0.884298|L:0.0625,0.859504|L:0.14625,0.85124|L:0.15375,0.721763|L:0.1075,0.716253|L:0.0875,0.743802|L:0.0625,0.763085|L:0.05625,0.721763|L:0.00125,0.746556</shape>
+    </shaper>
+    <ids>1</ids>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="Ident vaca" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="zzzz granja 06 vaca con flia.MP3" />
+     <p>SEÑALA DONDE ESTÁ LA VACA Y SU FAMILIA</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="074 Acertaste.MP3" />
+     <p>¡ACERTASTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCC0099">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC0099" border="true" />
+   </settings>
+   <cells rows="2" cols="3" border="false" image="zzzz aa la granja-resized.jpg" id="primary">
+    <style>
+     <color background="0x99FF66" inactive="0x99FF66" />
+    </style>
+    <shaper class="@Holes" cols="3" rows="2">
+     <shape comment="0">M:0.6225,0.506887|L:0.61625,0.584022|L:0.60375,0.608815|L:0.62,0.647383|L:0.62375,0.702479|L:0.65875,0.752066|L:0.715,0.741047|L:0.7675,0.831956|L:0.8175,0.779614|L:0.835,0.699724|L:0.8225,0.606061|L:0.79,0.575758|L:0.75875,0.666667|L:0.745,0.644628|L:0.735,0.672176|L:0.74375,0.69697|L:0.73,0.730028|L:0.7175,0.608815|L:0.69125,0.600551|L:0.6625,0.515152|L:0.625,0.501377</shape>
+    </shaper>
+    <ids>1</ids>
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@panels.Identify" name="Nos da miel" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="062_260303_1627V0.MP3" />
+     <p>¿QUÉ NOS DA LA ABEJA?</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>MIEL</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="243.0" cellHeight="193.0" border="true" id="primary">
+    <style>
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="1" image="zzzz z25 Miel.png">
+     <media type="PLAY_AUDIO" level="1" file="061_260303_1625V0.MP3" />
+    </cell>
+    <cell id="0" image="zzzz z22 Leche.png" />
+    <cell id="0" image="zzzz z23 Huevos.png" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="169 Colmena.-resized.jpg" file="169_colmena.-resized.jpg" />
+  <media name="170 Conejera-resized.jpg" file="170_conejera-resized.jpg" />
+  <media name="171 Gallinero-resized.jpg" file="171_gallinero-resized.jpg" />
+  <media name="172 Establo-resized.jpg" file="172_establo-resized.jpg" />
+  <media name="173 Abeja Mabel-resized.jpg" file="173_abeja_mabel-resized.jpg" />
+  <media name="Abeja 2026-resized.jpg" file="abeja_2026-resized.jpg" />
+  <media name="Expo1 2026.jpg" file="expo1_2026.jpg" />
+  <media name="Granja 2026-resized1.jpg" file="granja_2026-resized1.jpg" />
+  <media name="zzzz aa la granja-resized.jpg" file="zzzz_aa_la_granja-resized.jpg" />
+  <media name="0008 Fantástico.mp3" file="0008_fantastico.mp3" />
+  <media name="004Estupendo.MP3" file="004estupendo.mp3" />
+  <media name="005 Bien, bien, muy bien (2).MP3" file="005_bien__bien__muy_bien__2_.mp3" />
+  <media name="061_260303_1625V0.MP3" file="061_260303_1625v0.mp3" />
+  <media name="062_260303_1627V0.MP3" file="062_260303_1627v0.mp3" />
+  <media name="063_260303_1639V0.MP3" file="063_260303_1639v0.mp3" />
+  <media name="074 Acertaste.MP3" file="074_acertaste.mp3" />
+  <media name="075 Correcto.MP3" file="075_correcto.mp3" />
+  <media name="079  Bien.MP3" file="079__bien.mp3" />
+  <media name="11 Arma el puzzle.MP3" file="11_arma_el_puzzle.mp3" />
+  <media name="167 Dónde viven las abejas.MP3" file="167_donde_viven_las_abejas.mp3" />
+  <media name="168 En la colmena.MP3" file="168_en_la_colmena.mp3" />
+  <media name="Exposición sobre la Granja 2026.MP3" file="exposicion_sobre_la_granja_2026.mp3" />
+  <media name="Señala a las Abejas.MP3" file="senala_a_las_abejas.mp3" />
+  <media name="Trabajamos con la Abeja.MP3" file="trabajamos_con_la_abeja.mp3" />
+  <media name="zzzz granja 02 armamos.MP3" file="zzzz_granja_02_armamos.mp3" />
+  <media name="zzzz granja 03 oveja con flia.MP3" file="zzzz_granja_03_oveja_con_flia.mp3" />
+  <media name="zzzz granja 04 flia de cerdos.MP3" file="zzzz_granja_04_flia_de_cerdos.mp3" />
+  <media name="zzzz granja 05 caballo con flia.MP3" file="zzzz_granja_05_caballo_con_flia.mp3" />
+  <media name="zzzz granja 06 vaca con flia.MP3" file="zzzz_granja_06_vaca_con_flia.mp3" />
+  <media name="160 Abejas.png" file="160_abejas.png" />
+  <media name="161 Vaca.png" file="161_vaca.png" />
+  <media name="162 Caballo.png" file="162_caballo.png" />
+  <media name="163 Oveja.png" file="163_oveja.png" />
+  <media name="zzzz z22 Leche.png" file="zzzz_z22_leche.png" />
+  <media name="zzzz z23 Huevos.png" file="zzzz_z23_huevos.png" />
+  <media name="zzzz z25 Miel.png" file="zzzz_z25_miel.png" />
+ </mediaBag>
+</JClicProject>
+
